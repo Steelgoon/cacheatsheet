@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cheatsheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <!--Heading-->
+    <header>
+        My CSS Cheatsheet - stuff you keep forgetting
+    </header>
+
+    <!--CSS Section-->
+    <img src="./Images/CSS3_logo_and_wordmark.png"/>
+    <div class="css">
+        <table class="css-table">
+        <!--Table Header Sections-->
+        <!--Column 1-->
+            <tr>
+                <th>Topic</th>
+                <th>What to remember</th>
+            </tr>
+
+        <!--Table Body Sections-->
+        <!--Column 1-->
+            <tr>
+                <td>Pseudo-classes</td>
+                <td>You can use pseudo classes to add interactivity to any selector. It's always written as colon, followed by a name ex: <br>p:hover { background-color: lime; }. <br>Now whenever the mouse hovers over a paragraph element, that paragraph will have a lime colored background.</td>
+            </tr>
+            <tr>
+                <td>Opacity:</td>
+                <td>In CSS, Opacity has a value from 0 to 1.<br>0 is transparent, 1 is opaque, and in between is a scale between the two.</td>
+            </tr>
+            <tr>
+                <td>Border-radius</td>
+                <td>You can change an element's box to a circle if you use border:radius. <br>The easiest way to do this is to set the height and width equal to each other, then set border-radius: 50%.</td>
+            </tr>
+            <tr>
+                <td>Padding:</td>
+                <td>You can think of padding as a way to increase the inside space of an element. <br><em>Also important!</em> When you use padding, unless you specify, it will add the amount that you code in to each side of the box. So, coding in padding: 50px; means that in total, it will add 100px to the entire box (up, left, down, right)
+                <br> <strong>Padding, just like padding, can be increased on each side separately or all together, via 1, 2, 3, or 4 values, depending on whether you want some sides to be the same.</strong></td>
+            </tr>
+            <tr>
+                <td>Margin:</td>
+                <td>You can think of Margin as a way to increase the surrounging area, or outside space of an element.<br><strong>Margin, just like padding, can be increased on each side separately or all together, via 1, 2, 3, or 4 values, depending on whether you want some sides to be the same.</strong>
+                <br>You can use margin: to center an element with margin: 0 auto; but remember if you do this the element must have a width.</td>
+            </tr>
+            <tr>
+                <td>Vertical vs Horizontal dimensions</td>
+                <td>Remember! With the box model, horizontal dimensions add, but vertical dimensions do not!<br> Vertical dimensions simply take the value of the highest px (or other unit of measure)</td>
+            </tr>
+            <tr>
+                <td>Overflow:</td>
+                <td>This property controls what happens to content that spills or overflows outside of its box. It can either be <strong>hidden, scrolled, or visible(default)</strong><br>If hidden, any content that overflows will be hidden from view
+                <br>If set to scroll, a scrollbar will be added to the element's box so that the rest of the content can be viewed by scrolling.</td>
+            </tr>
+            <tr>
+                <td>Visbility:</td>
+                <td>3 values, hidden, visible, and collapse. If you choose to use hidden, remember that the web page will only hide the elements. There will still be an empty space for where the element is supposed to be.<br>
+                Note, if you use display:none, it will do the same thing as visibility:hidden except the empty space for the element will also disappear.</td>
+            </tr>
+            <tr>
+                <td>Box-sizing: border-box;</td>
+                <td>It's good practice to use box-sizing: border-box; to avoid dimensional issues with your web page. This is because in the default model (content-box) box dimensions are affected by <strong>border thickness and padding</strong>. Border-box isn't.</td>
+            </tr>
+            <tr>
+                <td>Position:</td>
+                <td>You can use position to change the positioning of elements. Position has 5 possible values. <strong>static(default), relative, absolute, fixed, and sticky.</strong>
+                <br><strong>relative</strong> (stay within normal flow of document. when user scrolls elements scroll too.) allows you to position an element <strong>relative</strong> to its default <em>static</em> position. In tandem with this, you specify from the top, bottom, left or right you want the element to move, on separate css declarations.
+                <br><strong>absolute</strong> (removed from document flow. stay at specified offset position.) allows you to position an element relative to its closest positioned parent element. Then you can offset it top, left, bottom or right just like relative. <strong>Note that if position is set to absolute, all other elements on the page will ignore the element and act like it isn't on the page.</strong>
+                <br><strong>fixed</strong> (removed from document flow. stay at specified offset position.) allows you to position an element in a fixed place. It will stay on the page and will follow the user as they scroll the document. Then you can offset it top, left, bottom, or right just like relative or absolute. <em>This technique is often used with navigation bars.</em>
+                <br><strong>sticky</strong> allows you to position an element keeping an element in the document flow as user scrolls, but it will then stick to a specified position as page is scrolled further.
+                <br><strong>static</strong> (stay within normal flow of document. when user scrolls elements scroll too.) Default value.</td>
+            </tr>
+            <tr>
+                <td>Display:</td>
+                <td><strong>In-line</strong>height and width cannot be specified. does not require a new line after each element. Think em, strong, a.
+                <br><strong>Block</strong> height and width can be specified. a new line is created after each element. Think h1-h6, p, div, footer.
+                <br><strong>Inline-block</strong> height and width can be specified. however a new line is not created after each element. Think img.
+                </td>
+            </tr>
+            <tr>
+                <td>Float</td>
+                <td>Used to simply move an element all the way to the left or right. Commonly used for wrapping text around an image. (not an ideal declaration). Floated elements must have a width.</td>
+            </tr>
+            <tr>
+                <td>Clear</td>
+                <td>Specifies how elements behave when they bump into each other on the page. left, right, both, none. ex. clear: left, left side of the element will not touch any other element within the same containing element.</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
